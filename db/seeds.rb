@@ -9,7 +9,7 @@
 puts "Creating Warehouses ..."
 Warehouse.create(name: 'The Original', address: '123 Original St. Cool City, Cool State 12345')
 
-puts "Creating Inventories ..."
-Inventory.create(name: 'Fancy Water Bottle', price: 10.99, quantity: 10, warehouse_id: 1)
+puts "Creating Items ..."
+Item.create(name: 'Fancy Water Bottle', price: 10.99, quantity: 10, warehouse_id: 1)
 
 puts "Done seeding ✅ !"

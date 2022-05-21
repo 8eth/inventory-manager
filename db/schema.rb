@@ -10,16 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_21_020331) do
+ActiveRecord::Schema.define(version: 2022_05_21_053555) do
 
-  create_table "inventories", force: :cascade do |t|
+  create_table "items", force: :cascade do |t|
+
     t.string "name"
     t.float "price"
     t.integer "quantity"
     t.integer "warehouse_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["warehouse_id"], name: "index_inventories_on_warehouse_id"
+    t.index ["warehouse_id"], name: "index_items_on_warehouse_id"
+    
   end
 
   create_table "warehouses", force: :cascade do |t|
@@ -29,5 +31,5 @@ ActiveRecord::Schema.define(version: 2022_05_21_020331) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "inventories", "warehouses"
+  add_foreign_key "items", "warehouses"
 end
