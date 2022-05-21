@@ -1,25 +1,28 @@
-# Rails on Replit
+# Inventory Manager
 
-This is a template to get you started with Rails on Replit. It's ready to go so you can just hit run and start coding!
+This app is an inventory tracking application for a logistics company built using Ruby on Rails and it is hosted on replit. 
 
-This template was generated using `rails new` (after you install the `rails` gem from the packager sidebar) so you can always do that if you prefer to set it up from scratch. The only had two make config changes we had to make to run it on Replit:
+# How to access the deployed app
 
-- bind the app on `0.0.0.0` instead of `localhost` (see `.replit`)
-- allow `*.repl.co` hosts (see `config/environments/development.rb`)
-- allow the app to be iframed on `replit.com` (see `config/application.rb`)
+To view and interact with inventory items, go to https://inventory-manager.bethfekadu.repl.co/items
+To view and interact with warehouses, go to https://inventory-manager.bethfekadu.repl.co/warehouses
 
-## Running the app
+# How to run the app on your local machine
 
-Simple hit run! You can edit the run command from the `.replit` file.
+After cloning down the repo from GitHub, run `rails db:create db:migrate db:seed` then run `rails s` in your terminal. Then open http://localhost:3000 in your browser to view and interact with the app.
+
+## How to run the app from the Replit file
+
+Go to https://replit.com/@BethFekadu/inventory-manager#app/views/items/_item.html.erb and hit run. You can edit the run command from the `.replit` file.
 
 ## Running commands
 
 Start every command with `bundle exec` so that it runs in the context of the installed gems environment. The console pane will give you output from the server but you can run arbitrary command from the shell without stopping the server.
 
-## Database
+# Author
 
-SQLite would work in development but we don't recommend running it in production. Instead look into using the built-in [Replit database](http://docs.replit.com/misc/database). Otherwise you are welcome to connect databases from your favorite provider. 
+Beth Fekadu
 
-## Help
-
-If you need help you might be able to find an answer on our [docs](https://docs.replit.com) page. Feel free to report bugs and give us feedback [here](https://replit.com/support).
+GitHub: https://github.com/8eth
+Blog: https://dev.to/8eth
+Linkedin: https://www.linkedin.com/in/beth-fekadu
