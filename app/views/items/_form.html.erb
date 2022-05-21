@@ -23,12 +23,12 @@
 
   <div>
     <%= form.label :quantity, style: "display: block" %>
-    <%= form.number_field :quantity %>
+    <%= form.number_field :quantity, in: 0..100 %>
   </div>
 
   <div>
     <%= form.label :warehouse_id, style: "display: block" %>
-    <%= form.text_field :warehouse_id %>
+    <%= form.collection_select :warehouse_id, Warehouse.order(:name),:id,:name, include_blank: true %>
   </div>
 
   <div>
