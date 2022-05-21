@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+puts "Creating Warehouses ..."
+Warehouse.create(name: 'The Original', address: '123 Original St. Cool City, Cool State 12345')
+
+puts "Creating Inventories ..."
+Inventory.create(name: 'Fancy Water Bottle', price: 10.99, quantity: 10, warehouse_id: 1)
+
+puts "Done seeding ✅ !"
