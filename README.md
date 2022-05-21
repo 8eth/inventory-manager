@@ -13,7 +13,7 @@ After cloning down the repo from GitHub, run `rails db:create db:migrate db:seed
 
 ## How to run the app from the Replit file
 
-Go to https://replit.com/@BethFekadu/inventory-manager#app/views/items/_item.html.erb and hit run. You can edit the run command from the `.replit` file.
+Go to https://replit.com/@BethFekadu/inventory-manager#README.md and hit run. You can edit the run command from the `.replit` file.
 
 ## Running commands
 
